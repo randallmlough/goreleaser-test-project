@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+RELEASE=$(svu next)
+git tag "${RELEASE}"
+git push --tags
+echo "New release tag ${RELEASE} created"
